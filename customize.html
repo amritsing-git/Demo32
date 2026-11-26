@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff5f1">
+  <title>Créer ma boîte | Boîte à Fraises</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo">
+    <svg class="logo-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="35" cy="35" r="33" fill="#fff0f2" stroke="#e9a0ad"/>
+      <path d="M35 16 L42 23 L28 23 Z" fill="#668b54"/>
+      <path d="M28 22 Q16 29 22 42 Q27 56 35 58 Q43 56 48 42 Q54 29 42 22 Z" fill="#e65c73"/>
+      <g fill="#fff6d9">
+        <ellipse cx="29" cy="35" rx="1.3" ry="2"/>
+        <ellipse cx="38" cy="35" rx="1.3" ry="2"/>
+        <ellipse cx="34" cy="43" rx="1.3" ry="2"/>
+        <ellipse cx="27" cy="45" rx="1.3" ry="2"/>
+        <ellipse cx="41" cy="45" rx="1.3" ry="2"/>
+      </g>
+    </svg>
+    <span class="logo-text">Boîte <small>à</small> Fraises</span>
+  </a>
+
+  <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="menu.html" class="nav-link">Nos créations</a>
+    <a href="customize.html" class="nav-link active">Sur mesure</a>
+    <a href="index.html#about" class="nav-link">Notre histoire</a>
+    <a href="index.html#contact" class="nav-link">Contact</a>
+    <a href="customize.html" class="nav-order">Créer ma boîte</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="page-hero custom-hero">
+  <span class="eyebrow">LAISSEZ PARLER VOTRE IMAGINATION</span>
+  <h1>Votre boîte,<br><em>votre histoire.</em></h1>
+  <p>
+    Choisissez vos envies et imaginez une création
+    gourmande qui vous ressemble.
+  </p>
+</section>
+
+<section class="builder-section">
+
+  <div class="builder-main">
+
+    <div class="builder-step">
+      <span class="step-number">01</span>
+      <div>
+        <h2>Choisissez votre boîte</h2>
+        <p>Quelle taille vous ferait plaisir ?</p>
+      </div>
+    </div>
+
+    <div class="size-grid">
+
+      <label class="choice-card">
+        <input type="radio" name="boxSize" value="Petite boîte" checked>
+        <div class="choice-content">
+          <span class="choice-emoji">♡</span>
+          <strong>Petite</strong>
+          <small>Pour une petite attention</small>
+        </div>
+      </label>
+
+      <label class="choice-card">
+        <input type="radio" name="boxSize" value="Boîte moyenne">
+        <div class="choice-content">
+          <span class="choice-emoji">♡♡</span>
+          <strong>Moyenne</strong>
+          <small>Pour partager un moment</small>
+        </div>
+      </label>
+
+      <label class="choice-card">
+        <input type="radio" name="boxSize" value="Grande boîte">
+        <div class="choice-content">
+          <span class="choice-emoji">♡♡♡</span>
+          <strong>Grande</strong>
+          <small>Pour les grandes occasions</small>
+        </div>
+      </label>
+
+    </div>
+
+    <div class="builder-step">
+      <span class="step-number">02</span>
+      <div>
+        <h2>Choisissez vos chocolats</h2>
+        <p>Sélectionnez vos préférences.</p>
+      </div>
+    </div>
+
+    <div class="option-grid">
+
+      <label class="option-card">
+        <input type="checkbox" name="chocolate" value="Chocolat au lait">
+        <span class="option-check"></span>
+        <span>🍫</span>
+        <strong>Chocolat au lait</strong>
+      </label>
+
+      <label class="option-card">
+        <input type="checkbox" name="chocolate" value="Chocolat blanc">
+        <span class="option-check"></span>
+        <span>🤍</span>
+        <strong>Chocolat blanc</strong>
+      </label>
+
+      <label class="option-card">
+        <input type="checkbox" name="chocolate" value="Chocolat noir">
+        <span class="option-check"></span>
+        <span>🍫</span>
+        <strong>Chocolat noir</strong>
+      </label>
+
+      <label class="option-card">
+        <input type="checkbox" name="chocolate" value="Chocolat rose">
+        <span class="option-check"></span>
+        <span>🍓</span>
+        <strong>Chocolat rose</strong>
+      </label>
+
+    </div>
+
+    <div class="builder-step">
+      <span class="step-number">03</span>
+      <div>
+        <h2>Ajoutez une touche spéciale</h2>
+        <p>Quelques détails pour rendre votre boîte unique.</p>
+      </div>
+    </div>
+
+    <div class="option-grid">
+
+      <label class="option-card">
+        <input type="checkbox" name="extra" value="Décorations">
+        <span class="option-check"></span>
+        <span>✨</span>
+        <strong>Décorations</strong>
+      </label>
+
+      <label class="option-card">
+        <input type="checkbox" name="extra" value="Message personnalisé">
+        <span class="option-check"></span>
+        <span>💌</span>
+        <strong>Message personnalisé</strong>
+      </label>
+
+      <label class="option-card">
+        <input type="checkbox" name="extra" value="Thème spécial">
+        <span class="option-check"></span>
+        <span>🎀</span>
+        <strong>Thème spécial</strong>
+      </label>
+
+      <label class="option-card">
+        <input type="checkbox" name="extra" value="Cadeau">
+        <span class="option-check"></span>
+        <span>🎁</span>
+        <strong>Option cadeau</strong>
+      </label>
+
+    </div>
+
+    <div class="builder-step">
+      <span class="step-number">04</span>
+      <div>
+        <h2>Parlez-nous de votre idée</h2>
+        <p>Un petit détail, une occasion ou une inspiration.</p>
+      </div>
+    </div>
+
+    <textarea id="customNote" class="custom-note"
+      placeholder="Ex. : Un cadeau d'anniversaire rose, avec un petit message..."></textarea>
+
+  </div>
+
+  <aside class="summary-card">
+
+    <div class="summary-top">
+      <span class="eyebrow">VOTRE PETITE CRÉATION</span>
+      <h2>Votre boîte ♡</h2>
+    </div>
+
+    <div class="summary-illustration">
+      <div class="summary-heart">♡</div>
+      <div class="summary-box">🍓 🍓 🍓</div>
+      <p>Une création imaginée par vous.</p>
+    </div>
+
+    <div class="summary-details">
+      <div class="summary-row">
+        <span>Format</span>
+        <strong id="summarySize">Petite boîte</strong>
+      </div>
+
+      <div class="summary-row">
+        <span>Chocolats</span>
+        <strong id="summaryChocolate">À choisir</strong>
+      </div>
+
+      <div class="summary-row">
+        <span>Extras</span>
+        <strong id="summaryExtras">Aucun</strong>
+      </div>
+    </div>
+
+    <button type="button" id="sendCustomOrder" class="btn btn-dark summary-button">
+      Envoyer ma demande ↗
+    </button>
+
+    <p class="summary-disclaimer">
+      Ceci est une demande de personnalisation.
+      Les prix, disponibilités et détails seront confirmés
+      directement avec la boutique.
+    </p>
+
+  </aside>
+
+</section>
+
+<section class="contact-section">
+  <div>
+    <span class="eyebrow">VOUS AVEZ UNE IDÉE ?</span>
+    <h2>Nous adorons<br><em>les idées originales.</em></h2>
+    <p>Envoyez-nous votre inspiration directement.</p>
+  </div>
+  <div class="contact-actions">
+    <a href="https://www.instagram.com/boiteafraises/" target="_blank" rel="noopener"
+      class="btn btn-dark">Instagram ↗</a>
+    <a href="menu.html" class="btn btn-outline">Voir nos créations</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <a href="index.html" class="logo footer-logo">
+    <svg class="logo-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="35" cy="35" r="33" fill="#fff0f2" stroke="#e9a0ad"/>
+      <path d="M35 16 L42 23 L28 23 Z" fill="#668b54"/>
+      <path d="M28 22 Q16 29 22 42 Q27 56 35 58 Q43 56 48 42 Q54 29 42 22 Z" fill="#e65c73"/>
+      <g fill="#fff6d9">
+        <ellipse cx="29" cy="35" rx="1.3" ry="2"/>
+        <ellipse cx="38" cy="35" rx="1.3" ry="2"/>
+        <ellipse cx="34" cy="43" rx="1.3" ry="2"/>
+        <ellipse cx="27" cy="45" rx="1.3" ry="2"/>
+        <ellipse cx="41" cy="45" rx="1.3" ry="2"/>
+      </g>
+    </svg>
+    <span class="logo-text">Boîte <small>à</small> Fraises</span>
+  </a>
+  <div class="footer-links">
+    <a href="index.html">Accueil</a>
+    <a href="menu.html">Nos créations</a>
+    <a href="customize.html">Sur mesure</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+  <a href="https://www.instagram.com/boiteafraises/" target="_blank" rel="noopener" class="footer-social">Instagram ↗</a>
+  <p>© 2026 Boîte à Fraises · Créé avec amour ♡</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
